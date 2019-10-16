@@ -1,0 +1,976 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One'); */
+
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/********** # Font faces **********/
+
+@font-face {
+    font-family: lawyer;
+    src: url(../fonts/bigJohn.otf);
+}
+
+@font-face {
+    font-family: lawyer1;
+    src: url(../fonts/chivoBlack.ttf);
+}
+
+@font-face {
+    font-family: lawyer2;
+    src: url(../fonts/leSuperTypeBold.ttf);
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../font/ProductSans-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: MyFont, 'Julius Sans One', sans-serif;
+    font-weight: 400;
+}
+
+
+/********** # Particles.js **********/
+
+#particles-js {
+    background-image: url("../img/bgimg.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/********** # Logo **********/
+
+.logo {
+    float: left;
+    padding: 8px;
+    margin-left: 16px;
+    margin-top: 0px;
+}
+
+.logo a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+.logo img {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+}
+
+.wrapper {
+    box-sizing: border-box;
+}
+
+
+/********** # Nav bar **********/
+
+nav {
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    padding: 0px 8px 16px 8px;
+    box-sizing: border-box;
+    transition: all 1.3s ease;
+    z-index: 9999;
+    /*background-color: rgb(28,3,49, 0.6);*/
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition: 1s;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 48px;
+}
+
+nav ul li:last-child {
+    margin-right: 24px;
+}
+
+nav ul li a {
+    display: inline-block;
+    outline: none;
+    color: #FFF;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 1.0px;
+    transition: all 0.4s ease;
+    transition-delay: 0.5s;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #ed1c24;
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+    text-decoration: none;
+    width: 100%;
+    transition: width .3s;
+}
+
+nav.white {
+    background: #FFF;
+}
+
+.nav-a-color-onscroll {
+    display: inline-block;
+    outline: none;
+    color: #1C0331;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1.0px;
+    transition: all 0.4s ease;
+    transition-delay: 0.5s;
+}
+
+.nav-a-color-onscroll:hover {
+    text-decoration: none;
+    color: #1C0331;
+}
+
+
+/********** # Text block **********/
+
+.text-block {
+    position: absolute;
+    bottom: 7rem;
+    left: 5rem;
+    /*background-color: rgb(28,3,49, 0.6);*/
+    transform: translate(0, -100%);
+}
+
+.text-block p {
+    margin-bottom: 0;
+    font-size: 22px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #FC2929;
+}
+
+.text-block h1 {
+    letter-spacing: 5px;
+    font-size: 6rem;
+    font-weight: 800;
+    color: white;
+    text-transform: capitalize;
+    /*font-family: 'Staatliches',
+cursive;*/
+    /*font-family: 'Anton', sans-serif;*/
+    font-family: 'lawyer2';
+}
+
+
+/********** # Button Get Started **********/
+
+.btn-get-started {
+    color: #1C0331;
+    background: #e4ad15;
+    border: 1px solid #e4ad15;
+    border-radius: 2rem;
+}
+
+.btn-get-started:hover {
+    background: #bd9008;
+    border: 1px solid #bd9008;
+    transition: all 0.3s ease;
+}
+
+.btn-green {
+    color: #1C0331;
+    background: #79e415;
+    border: 1px solid #79e415;
+    border-radius: 2rem;
+}
+
+.btn-black {
+    color: #1C0331;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 2rem;
+}
+
+.btn-darkblue {
+    color: #1C0331;
+    background: #0f0033;
+    border: 1px solid #0f0033;
+    border-radius: 2rem;
+}
+
+
+/********** # Button Learn More **********/
+
+.btn-learn-more {
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    border-radius: 2rem;
+}
+
+.btn-learn-more:hover {
+    background: white;
+    color: #1C0331;
+    transition: all 0.3s ease;
+}
+
+
+/********** Social icons in Desktops **********/
+
+.social-wrapper {
+    position: absolute;
+    bottom: 5.5rem;
+    right: 3rem;
+}
+
+.social-wrapper ul {
+    list-style: none;
+}
+
+.social-wrapper ul li {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    /*background: rgba(0, 0, 1, 0.3);*/
+    margin: 10px 0;
+    cursor: pointer;
+    /*border-radius: 2rem;*/
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+    border-radius: 2rem;
+}
+
+.social-wrapper ul li .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.social-wrapper ul li.facebook:hover {
+    background: #3b5998;
+    /*box-shadow: 0 0 10px #3b5998;*/
+}
+
+.social-wrapper ul li.twitter:hover {
+    background: #00aced;
+    /*box-shadow: 0 0 10px #00aced;*/
+}
+
+.social-wrapper ul li.instagram:hover {
+    background: #bc2a8d;
+    /*box-shadow: 0 0 10px #cd486b;*/
+}
+
+.social-wrapper ul li.google:hover {
+    background: #dd4b39;
+    /*box-shadow: 0 0 10px #DD4B39;*/
+}
+
+.social-wrapper ul li.whatsapp:hover {
+    background: #4dc247;
+    /*box-shadow: 0 0 10px #4DC247;*/
+}
+
+.social-wrapper ul li.facebook div.social-slider {
+    background: #3B5998;
+    /*box-shadow: 0 0 5px #3B5998;*/
+}
+
+.social-wrapper ul li.twitter div.social-slider {
+    background: #00ACED;
+    /*box-shadow: 0 0 10px #00ACED;*/
+}
+
+.social-wrapper ul li.instagram div.social-slider {
+    background: #BC2A8D;
+    /*box-shadow: 0 0 10px #BC2A8D;*/
+}
+
+.social-wrapper ul li.google div.social-slider {
+    background: #DD4B39;
+    /*box-shadow: 0 0 10px #DD4B39;*/
+}
+
+.social-wrapper ul li.whatsapp div.social-slider {
+    background: #4DC247;
+    /*box-shadow: 0 0 13px #4DC247;*/
+}
+
+.social-wrapper .social-slider {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 51px;
+    width: 0rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    transition: all 0.3s 0.1s ease;
+}
+
+.social-wrapper .social-slider p {
+    font-family: MyFont;
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.social-wrapper ul li:hover .social-slider {
+    width: 8rem;
+    transition: all 0.5s ease;
+}
+
+.social-wrapper ul li:hover .social-slider p {
+    opacity: 1;
+    transition: all 1s 0.2s ease;
+}
+
+
+/********** End Social icons **********/
+
+
+/********** # Down Button for Smoth scrolling **********/
+
+.down-btn-title {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.down-btn-title>a>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+#what-we-do {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+
+/***************** end something *****************/
+
+
+/***************** # card ************************/
+
+.multiple-items {
+    max-width: 100vw !important;
+}
+
+.card {
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: rgba(0, 0, 0, 0, 0);
+    width: 100%;
+}
+
+.card-img-top {
+    border-radius: 0;
+    /* max-width: 100vw; */
+    max-width: 100%;
+    height: auto;
+    /* height: 400px !important; */
+}
+
+.card-title {
+    padding-top: 0rem;
+    font-family: MyFont !important;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.card-body {
+    margin: 0;
+    padding: 0;
+    font-family: MyFont !important;
+}
+
+.card-text {
+    padding: 0;
+    margin: 0;
+}
+
+.source {
+    border: 1px solid #ffeded;
+    display: inline-block;
+    border-radius: 5rem;
+    padding: 0 0.5rem;
+}
+
+a {
+    color: #000;
+}
+
+
+/***************** # end card ************************/
+
+.div-slick-slide {
+    /* max-width: 100%; */
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    overflow: hidden;
+    max-width: 100%;
+    /* transform: translateY(-30%); */
+    z-index: 99;
+}
+
+.slick-slider-card-button {
+    display: inline-block;
+    color: #1C0331;
+    background: #FFFFFF;
+    /* background: #05B499; */
+    border: 1px solid #e4ad15;
+    border-radius: 5rem;
+    font-family: MyFont;
+    padding: 0.3rem 1rem;
+}
+
+.slick-slider-card-button:hover {
+    background: #e4ad15;
+}
+
+.slick-slide-control-btn {
+    /* max-width: 100%; */
+    /* padding-left: 2rem; */
+    padding-right: 2rem;
+    overflow: hidden;
+    /* transform: translateY(-360%); */
+    z-index: 100;
+}
+
+.short-hr {
+    width: 50%;
+}
+
+.time-ago {
+    font-family: MyFont;
+}
+
+.left {
+    border: 1px solid #E4AD15;
+    width: 2.0rem;
+    height: 2.0rem;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    padding: 0.5rem;
+}
+
+.slick-control-btn {
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.slick-control-btn:hover {
+    background: #E4AD15;
+}
+
+.div-slick-slide img:hover {
+    cursor: pointer;
+    background: #E4AD15;
+}
+
+.right {
+    border: 1px solid #E4AD15;
+    width: 2.0rem;
+    height: 2.0rem;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    padding: 0.5rem;
+}
+
+.title-3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+    font-family: 'Bitter', serif;
+    color: #000;
+    /* align-items: center; */
+}
+
+.slick-slider {
+    z-index: 9;
+    max-width: 100%;
+    /* transform: translateY(-25%); */
+}
+
+
+/********** # end Div slide slide **********/
+
+
+/************ # latest news html ************/
+
+.latest-news-bg {
+    /* The image used */
+    background-image: url("../img/latest_news_bg.png");
+    /* Full height */
+    height: 50%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centered {
+    z-index: 9;
+    position: absolute;
+    color: #fff;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.solution-bg {
+    /* The image used */
+    background-image: url("../img/solutions/types-of-climate.jpg");
+    /* Full height */
+    height: 50%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register-bg {
+    /* The image used */
+    background-image: url("../img/register/alfons-morales-YLSwjSy7stw-unsplash.jpg");
+    /* Full height */
+    height: 50%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/************ # latest news html ************/
+
+
+/********** # 960 **********/
+
+@media screen and (max-width: 960px) {
+    /********** # 960 nav **********/
+    nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding: 0 8px 50px 8px;
+    }
+    .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #FFF;
+        opacity: 0;
+        transition: all 0.2s ease;
+    }
+    .nav-wrapper ul {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    .nav-wrapper ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .nav-wrapper ul li:nth-child(1) a {
+        transition-delay: 0.2s;
+    }
+    .nav-wrapper ul li:nth-child(2) a {
+        transition-delay: 0.3s;
+    }
+    .nav-wrapper ul li:nth-child(3) a {
+        transition-delay: 0.4s;
+    }
+    .nav-wrapper ul li:nth-child(4) a {
+        transition-delay: 0.5s;
+    }
+    .nav-wrapper ul li:nth-child(5) a {
+        transition-delay: 0.6s;
+    }
+    .nav-wrapper ul li:nth-child(6) a {
+        transition-delay: 0.7s;
+    }
+    .nav-wrapper ul li:nth-child(7) a {
+        transition-delay: 0.8s;
+    }
+    .nav-wrapper ul li:not(:first-child) {
+        margin-left: 0;
+    }
+    .nav-wrapper ul li a {
+        padding: 10px 25px;
+        opacity: 0;
+        color: #260C30;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;
+    }
+    .nav-btn {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 9999;
+        border-radius: 70%;
+    }
+    .nav-btn i {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #FFF;
+        border-radius: 2px;
+        margin-left: 14px;
+    }
+    .nav-btn i:nth-child(1) {
+        margin-top: 16px;
+    }
+    .nav-btn i:nth-child(2) {
+        margin-top: 4px;
+        opacity: 1;
+    }
+    .nav-btn i:nth-child(3) {
+        margin-top: 4px;
+    }
+    /********** # 960 text block **********/
+    .text-block {
+        position: absolute;
+        bottom: 7rem;
+        left: 5rem;
+        /*background-color: rgb(28,3,49, 0.6);*/
+        transform: translate(0, -110%);
+    }
+    .text-block p {
+        margin-bottom: 0;
+        font-size: 20px;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        color: #FC2929;
+    }
+    .text-block h1 {
+        letter-spacing: 5px;
+        font-size: 5rem;
+        font-weight: 800;
+        color: white;
+        text-transform: capitalize;
+        /*font-family: 'Staatliches',
+cursive;*/
+        /*font-family: 'Anton', sans-serif;*/
+        font-family: 'lawyer2';
+    }
+    /********** # 960 button Get Started **********/
+    .btn-get-started {
+        font-size: 0.9rem;
+        color: #1C0331;
+        background: #e4ad15;
+        border: 1px solid #e4ad15;
+    }
+    .btn-get-started:hover {
+        background: #bd9008;
+        border: 1px solid #bd9008;
+        transition: all 0.3s ease;
+    }
+    /********** # 960 button Learn More **********/
+    .btn-learn-more {
+        font-size: 0.9rem;
+        color: white;
+        background: rgba(0, 0, 0, 0);
+        border: 1px solid white;
+    }
+    .btn-learn-more:hover {
+        background: white;
+        color: #1C0331;
+        transition: all 0.3s ease;
+    }
+    /********** # 960 Social icons **********/
+    .social-wrapper {
+        position: absolute;
+        bottom: 5.5rem;
+        right: 3rem;
+    }
+    .social-wrapper ul li .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.2rem;
+        color: #fff;
+    }
+}
+
+
+/********** # 710 **********/
+
+@media screen and (max-width: 710px) {
+    /********** # 710 text block **********/
+    .text-block {
+        position: absolute;
+        bottom: 6rem;
+        left: 3rem;
+        /*background-color: rgb(28,3,49, 0.6);*/
+        transform: translate(0, -120%);
+    }
+    .text-block p {
+        margin-bottom: 0;
+        font-size: 18px;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        color: #FC2929;
+    }
+    .text-block h1 {
+        letter-spacing: 5px;
+        font-size: 4.5rem;
+        font-weight: 800;
+        color: white;
+        text-transform: capitalize;
+        /*font-family: 'Staatliches',
+cursive;*/
+        /*font-family: 'Anton', sans-serif;*/
+        font-family: 'lawyer2';
+    }
+    /********** # 710 button Get Started **********/
+    .btn-get-started {
+        font-size: 0.8rem;
+        color: #1C0331;
+        background: #e4ad15;
+        border: 1px solid #e4ad15;
+    }
+    .btn-get-started:hover {
+        background: #bd9008;
+        border: 1px solid #bd9008;
+        transition: all 0.3s ease;
+    }
+    /********** # 710 button Learn More **********/
+    .btn-learn-more {
+        font-size: 0.8rem;
+        color: white;
+        background: rgba(0, 0, 0, 0);
+        border: 1px solid white;
+    }
+    .btn-learn-more:hover {
+        background: white;
+        color: #1C0331;
+        transition: all 0.3s ease;
+    }
+    /********** # 710 Social icons **********/
+    .social-wrapper {
+        position: absolute;
+        bottom: 4.5rem;
+        right: 2rem;
+    }
+    .social-wrapper ul li .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.0rem;
+        color: #fff;
+    }
+}
+
+
+/*@media screen and (max-width: 610px) {
+    .social-wrapper {
+        display: none;
+    }
+}*/
+
+
+/********** # 610 **********/
+
+@media screen and (max-width: 610px) {
+    /********** # 610 text block **********/
+    .text-block {
+        position: absolute;
+        bottom: 6rem;
+        left: 1rem;
+        /*background-color: rgb(28,3,49, 0.6);*/
+        transform: translate(0, -70%);
+    }
+    .text-block p {
+        margin-bottom: 0;
+        font-size: 17px;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        color: #FC2929;
+    }
+    .text-block h1 {
+        letter-spacing: 5px;
+        font-size: 3.7rem;
+        font-weight: 800;
+        color: white;
+        text-transform: capitalize;
+        /*font-family: 'Staatliches',
+cursive;*/
+        /*font-family: 'Anton', sans-serif;*/
+        font-family: 'lawyer2';
+    }
+    /********** # 610 button Get Started **********/
+    .btn-get-started {
+        font-size: 0.7rem;
+        color: #1C0331;
+        background: #e4ad15;
+        border: 1px solid #e4ad15;
+    }
+    .btn-get-started:hover {
+        background: #bd9008;
+        border: 1px solid #bd9008;
+        transition: all 0.3s ease;
+    }
+    /********** # 610 button Learn More **********/
+    .btn-learn-more {
+        font-size: 0.7rem;
+        color: white;
+        background: rgba(0, 0, 0, 0);
+        border: 1px solid white;
+    }
+    .btn-learn-more:hover {
+        background: white;
+        color: #1C0331;
+        transition: all 0.3s ease;
+    }
+    /********** # 610 Social icons **********/
+    .social-wrapper {
+        display: inline-block;
+        position: absolute;
+        bottom: 4.5rem;
+        right: 2rem;
+    }
+    .social-wrapper ul li .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.0rem;
+        color: #fff;
+    }
+}
+
+
+/********** # 500 **********/
+
+@media screen and (max-width: 500px) {
+    .social-wrapper {
+        display: none;
+    }
+}
+
+#nav:checked+.nav-btn {
+    transform: rotate(45deg);
+}
+
+#nav:checked+.nav-btn i {
+    background: #000;
+    transition: transform 0.2s ease;
+}
+
+#nav:checked+.nav-btn i:nth-child(1) {
+    transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked+.nav-btn i:nth-child(2) {
+    opacity: 0;
+}
+
+#nav:checked+.nav-btn i:nth-child(3) {
+    transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked~.nav-wrapper {
+    z-index: 9990;
+    opacity: 1;
+}
+
+#nav:checked~.nav-wrapper ul li a {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#nav:checked~.nav-wrapper ul li a:hover {
+    color: #260C30;
+}
+
+.hidden {
+    display: none;
+}
+
+.head-title {
+    position: relative;
+}
