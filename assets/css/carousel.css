@@ -13,7 +13,7 @@
 }
 
 .carousel-caption {
-    z-index: 10;
+    z-index: 1;
 }
 
 .carousel .carousel-item {
@@ -26,16 +26,16 @@
 }
 
 .carousel .carousel-inner .bg1 {
-    background-image: url('../img/carousel/bg_1.jpg');
+    background-image: url('../img/carousel/bg_1_overlay.png');
     background-position: center top;
 }
 
 .carousel .carousel-inner .bg2 {
-    background-image: url('../img/carousel/bg_2.jpg');
+    background-image: url('../img/carousel/bg_2_overlay.png');
     background-position: center center;
 }
 
 .carousel .carousel-inner .bg3 {
-    background-image: url('../img/carousel/bg_3.jpg');
+    background-image: url('../img/carousel/bg_3_overlay.png');
     background-position: center bottom;
 }

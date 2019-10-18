@@ -25,9 +25,23 @@
 .btn-facebook {
     background-color: #405D9D;
     color: #fff;
+    border-radius: 0;
 }
 
 .btn-twitter {
     background-color: #42AEEC;
     color: #fff;
+    border-radius: 0;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.no-border-radius {
+    border-radius: 0 !important;
+}
+
+.input-group-prepend {
+    border-radius: 0 !important;
 }

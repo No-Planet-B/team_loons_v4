@@ -10,7 +10,95 @@
         @import url('https://fonts.googleapis.com/css?family=Roboto');
         @import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Oranienbaum&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Ramabhadra&display=swap');
         /* # latest_news.html */
+        
+        .evidence-bg {
+            /* The image used */
+            background-image: url("../img/evidences/evidence_bg.jpg");
+            /* Full height */
+            height: 50%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .solution-bg {
+            /* The image used */
+            background-image: url("../img/solutions/types-of-climate.jpg");
+            /* Full height */
+            height: 50%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .register-bg {
+            /* The image used */
+            background-image: url("../img/register/alfons-morales-YLSwjSy7stw-unsplash.jpg");
+            /* Full height */
+            height: 50%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .card-grid {
+            width: 20%;
+            height: auto;
+        }
+        
+        .card-grid-image {
+            width: 100%;
+        }
+        
+        .middle-section {
+            background: rgb(255, 192, 0);
+            background: linear-gradient(120deg, rgba(255, 192, 0, 0.9864320728291317) 0%, rgba(255, 5, 5, 0.8631827731092436) 100%);
+        }
+        
+        #solutions {
+            background: rgb(255, 0, 52);
+            background: linear-gradient(159deg, rgba(255, 0, 52, 0.9864320728291317) 0%, rgba(99, 0, 0, 1) 100%);
+        }
+        
+        .img-icon {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .img-icon-indonesia {
+            width: 60px;
+            height: 60px;
+        }
+        
+        ._1px_bolder {
+            border: 1px solid #FF9800;
+        }
+        
+        .horizontal_low_padding {
+            padding: 0 0.4rem;
+        }
+        
+        .my-text-muted {
+            color: #B5B2B3;
+        }
+        
+        .light-shadow:hover {
+            box-shadow: 3px 3px 5px #eee;
+        }
+        
+        .img-box-shadow {
+            transition: all ease-in-out 0.3s;
+        }
+        
+        .img-box-shadow:hover {
+            box-shadow: 3px 3px 5px #2F3030;
+        }
         
         .white-link {
             color: rgb(255, 255, 255);
@@ -26,9 +114,9 @@
             background-color: #2F3030;
         }
         
-        .my-input-rounded {
+        .my-input {
             border: 0;
-            border-radius: 5rem;
+            border-radius: 0;
         }
         
         #button {
@@ -37,7 +125,7 @@
             width: 50px;
             height: 50px;
             text-align: center;
-            border-radius: 4px;
+            border-radius: 0;
             position: fixed;
             bottom: 30px;
             right: 30px;
@@ -48,11 +136,11 @@
         }
         
         #button::after {
-            content: "\f077";
+            content: "\f062";
             font-family: FontAwesome;
             font-weight: normal;
             font-style: normal;
-            font-size: 2em;
+            font-size: 1.5em;
             line-height: 50px;
             color: #fff;
         }
@@ -69,6 +157,16 @@
         #button.show {
             opacity: 1;
             visibility: visible;
+        }
+        /* Styles for the content section */
+        
+        .content {
+            width: 77%;
+            margin: 50px auto;
+            font-family: 'Merriweather', serif;
+            font-size: 17px;
+            color: #6c767a;
+            line-height: 1.9;
         }
         
         .solution {
@@ -113,9 +211,9 @@
         }
         /********** # title how it works (For border around 'How it works') **********/
         
-        #title-how-it-works {
+        .title-how-it-works {
             border: 1px solid #BDC1C5;
-            border-radius: 2rem;
+            border-radius: 0;
             padding: 0.3rem 1rem;
         }
         /********** # Style of 'How it works' **********/
@@ -370,13 +468,14 @@
             color: #1C0331;
             border-radius: 2rem;
         }
-		
-		#threats_to_investment{
-			color:yellow;
-		}
-		#loons{
-			color:black;
-		}
+        
+        #threats_to_investment {
+            color: yellow;
+        }
+        
+        #loons {
+            color: black;
+        }
         /********** # 960 **********/
         
         @media screen and (max-width: 960px) {

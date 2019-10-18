@@ -199,9 +199,19 @@ nav.white {
     margin-bottom: 0;
     font-size: 22px;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Ramabhadra', sans-serif;
+    font-weight: 300;
     color: #FC2929;
+}
+
+.gradient-text {
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(224, 253, 253) 0%, #e4ad15 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20vw;
+    font-family: 'Poppins', sans-serif;
 }
 
 .text-block h1 {
@@ -210,9 +220,7 @@ nav.white {
     font-weight: 800;
     color: white;
     text-transform: capitalize;
-    /*font-family: 'Staatliches',
-cursive;*/
-    /*font-family: 'Anton', sans-serif;*/
+    /* font-family: 'Oranienbaum', serif; */
     font-family: 'lawyer2';
 }
 
@@ -222,35 +230,50 @@ cursive;*/
 .btn-get-started {
     color: #1C0331;
     background: #e4ad15;
-    border: 1px solid #e4ad15;
-    border-radius: 2rem;
+    border: 0;
+    border-radius: 0;
 }
 
 .btn-get-started:hover {
     background: #bd9008;
-    border: 1px solid #bd9008;
+    border: 0;
     transition: all 0.3s ease;
 }
 
-.btn-green {
-    color: #1C0331;
-    background: #79e415;
-    border: 1px solid #79e415;
-    border-radius: 2rem;
+.btn-smoke {
+    color: #B5B2B3;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(142, 121, 126);
+    border-radius: 0;
+}
+
+.btn-smoke:hover {
+    color: #FFF;
+    background-color: rgb(142, 121, 126);
 }
 
 .btn-black {
-    color: #1C0331;
-    background: #000000;
-    border: 1px solid #000000;
-    border-radius: 2rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #B5B2B3;
+    border-radius: 0;
+}
+
+.btn-black:hover {
+    color: #fff;
+    background-color: rgb(145, 163, 133);
 }
 
 .btn-darkblue {
-    color: #1C0331;
-    background: #0f0033;
-    border: 1px solid #0f0033;
-    border-radius: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(141, 176, 219);
+    border-radius: 0;
+}
+
+.btn-darkblue:hover {
+    color: #FFF;
+    background-color: rgb(141, 176, 219);
 }
 
 
@@ -259,8 +282,8 @@ cursive;*/
 .btn-learn-more {
     color: white;
     background: rgba(0, 0, 0, 0);
-    border: 1px solid white;
-    border-radius: 2rem;
+    border: 0;
+    border-radius: 0;
 }
 
 .btn-learn-more:hover {
@@ -276,6 +299,7 @@ cursive;*/
     position: absolute;
     bottom: 5.5rem;
     right: 3rem;
+    z-index: 999;
 }
 
 .social-wrapper ul {
@@ -484,7 +508,7 @@ a {
     background: #FFFFFF;
     /* background: #05B499; */
     border: 1px solid #e4ad15;
-    border-radius: 5rem;
+    border-radius: 0;
     font-family: MyFont;
     padding: 0.3rem 1rem;
 }
@@ -580,28 +604,6 @@ a {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.solution-bg {
-    /* The image used */
-    background-image: url("../img/solutions/types-of-climate.jpg");
-    /* Full height */
-    height: 50%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.register-bg {
-    /* The image used */
-    background-image: url("../img/register/alfons-morales-YLSwjSy7stw-unsplash.jpg");
-    /* Full height */
-    height: 50%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
