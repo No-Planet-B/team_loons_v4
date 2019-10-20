@@ -30,6 +30,12 @@
     src: url('../font/ProductSans-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'FontBlogTitle';
+    /* src: url('../fonts/Raleway-Medium.ttf'); */
+    src: url('../fonts/galderglynn\ titling\ bk.ttf')
+}
+
 * {
     box-sizing: border-box;
 }
@@ -585,17 +591,6 @@ a {
 
 
 /************ # latest news html ************/
-
-.latest-news-bg {
-    /* The image used */
-    background-image: url("../img/latest_news_bg.png");
-    /* Full height */
-    height: 50%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .centered {
     z-index: 9;

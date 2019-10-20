@@ -13,6 +13,58 @@
         @import url('https://fonts.googleapis.com/css?family=Oranienbaum&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Ramabhadra&display=swap');
         /* # latest_news.html */
+
+        table th {
+    width: auto !important;
+}
+        
+        .Title {
+            font-family: FontBlogTitle;
+            color: rgb(54, 54, 54);
+        }
+        
+        u {
+            text-decoration: none;
+            transition: all ease-in-out .3s;
+            background: transparent;
+            border-bottom: 3px solid #FF9800;
+        }
+        
+        u:hover {
+            background: #ff9800;
+            color: #000;
+        }
+        
+        .link-style-none {
+            text-decoration-line: none !important;
+        }
+        
+        .text-overlay-bg {
+            background-color: rgba(63, 43, 0, 0.829);
+            padding: 0.5rem 1rem;
+        }
+        
+        .latest-news-bg {
+            /* The image used */
+            background-image: url("../img/latest_news/latest_news_bg.png");
+            /* Full height */
+            height: 50%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .causes-bg {
+            /* The image used */
+            background-image: url("../img/causes/causes_bg.png");
+            /* Full height */
+            height: 50%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         
         .evidence-bg {
             /* The image used */
@@ -27,13 +79,31 @@
         
         .solution-bg {
             /* The image used */
-            background-image: url("../img/solutions/types-of-climate.jpg");
+            background-image: url("../img/solutions/solution_bg3.jpg");
             /* Full height */
             height: 50%;
             /* Center and scale the image nicely */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+        
+        #circle_1_solution:focus,
+        #circle_2_solution:focus,
+        #circle_3_solution:focus,
+        #rect_1_solution:focus,
+        #rect_2_solution:focus,
+        #rect_3_solution:focus {
+            outline: none;
+        }
+        
+        .index-solution {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .register-bg {
@@ -106,8 +176,9 @@
         
         .paragraph_text {
             font-size: 1.10rem;
-            line-height: 2rem;
+            line-height: 1.5rem;
             font-family: 'Lato', sans-serif;
+            padding-top: 0;
         }
         
         footer {
